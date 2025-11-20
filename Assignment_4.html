@@ -1,0 +1,52 @@
+<head>
+  <meta charset="UTF-8">
+  <title>SIT Event - Student Registration</title>
+</head>
+<img src="C:\Users\admin\OneDrive\Desktop\symbiosislogo.jpeg" alt="symbiosis logo" style="width:100px;height:100px">
+<body>
+  <h1><center><font color="red">SIT Event - Student Registration</font></center></h1>
+  <form>
+    <!-- Text Input -->
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" ><br><hr>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" ><br><hr>
+
+    <label for="PRN">PRN:</label><br>
+    <input type="text" id="prn" name="PRN" ><br><hr>
+    
+     <label for="age">Age:</label><br>
+     <input type="number" id="age" name="Age" min="1" max="25"><br><hr>
+
+    <!-- Checkboxes -->
+    <p>1.Events you want to participate in:</p>
+    <input type="checkbox" name="Competition" value="Coding Competition"> Coding Competition<br>
+    <input type="checkbox" name="Competition" value="Quiz Competition"> Quiz Competition<br>
+    <input type="checkbox" name="Competition" value="Debate"> Debate<br>
+    <input type="checkbox" name="Competition" value="Hackathon"> Hackathon<br><hr>
+
+    <!-- Radio Buttons -->
+    <p>2.Year of Study:</p>
+    <input type="radio" id="first" name="year" value="First Year" required> First Year<br>
+    <input type="radio" id="second" name="year" value="Second Year"> Second Year<br>
+    <input type="radio" id="third" name="year" value="Third Year"> Third Year<br>
+    <input type="radio" id="fourth" name="year" value="Fourth Year"> Fourth Year<br><hr>
+
+  <br>
+
+    <!-- File Upload -->
+    <label for="idcard">Upload Student ID Card (PDF/JPG):</label><br>
+    <input type="file" id="idcard" name="idcard" accept=".jpg,.jpeg,.png,.pdf" required><br><hr>
+
+    <!-- Hidden Control -->
+    <input type="hidden" name="event_id" value="SIT2025">
+
+    <!-- Buttons -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+  </form>
+
+</body>
+</html>
